@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "514438113719",
+    "firebase_url": "https://hanger-danger.firebaseio.com",
+    "project_id": "hanger-danger",
+    "storage_bucket": "hanger-danger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514438113719:android:1fa0fb823238695df1a032",
+        "android_client_info": {
+          "package_name": "baddles.hangerdanger.hangerdanger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514438113719-heedgvpb3q55guu7u5fancpjkflm0p9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZFVBzLBu5_UbO88jU6BsIKojpUuAsaAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514438113719-heedgvpb3q55guu7u5fancpjkflm0p9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

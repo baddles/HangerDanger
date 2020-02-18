@@ -1,0 +1,28 @@
+programming
+A verb to write.
+Writing a set of instruction.
+To tell computer what to do.
+artificial intelligence
+A noun.
+Term to describe machine can think.
+Perform tasks that normally require human intelligence.
+data structure
+A term related to information.
+How machine handles information.
+Organization, management & storage format that enables efficient access and modification.
+algorithm
+A mathematical term.
+Describe steps.
+Sequences of instruction to solve a problem.
+computer science
+A major
+Related to technology.
+study of processes that interact with data and that can be represented as data in the form of programs.
+mergesort
+An algorithm.
+A sorting algorithm.
+a divide-and-conquer algorithm with O(nLogn) time complexity in all cases.
+big o notation
+A mathematical notation.
+How much time/space?
+a term to describe complexity of algorithms or functions.

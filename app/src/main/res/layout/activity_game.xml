@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gameplay_0"
+    tools:context=".GameActivity"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#88A99F"
+            android:text="HINT!"
+            android:textSize="32dp"
+            android:id="@+id/hint"
+            android:visibility="gone"
+            android:onClick="btnOnClickHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </Button>
+        <LinearLayout
+            android:id="@+id/toOverwrite"
+            android:name="keyboardLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="btnOnClickProcess"
+                    android:text="Q" android:id="@+id/Q" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="btnOnClickProcess"
+                    android:text="W" android:id="@+id/W" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="btnOnClickProcess"
+                    android:text="E" android:id="@+id/E" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="btnOnClickProcess"
+                    android:text="R"
+                    android:id="@+id/R"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="T"
+                    android:id="@+id/T"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="Y"
+                    android:id="@+id/Y"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="U"
+                    android:id="@+id/U"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="I"
+                    android:id="@+id/I"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="O"
+                    android:id="@+id/O"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="P"
+                    android:id="@+id/P"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" " />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="A"
+                    android:id="@+id/A"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="S"
+                    android:id="@+id/S"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="D"
+                    android:id="@+id/D"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="F"
+                    android:id="@+id/F"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="G"
+                    android:id="@+id/G"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="H"
+                    android:id="@+id/H"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="J"
+                    android:id="@+id/J"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="K"
+                    android:id="@+id/K"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="L"
+                    android:id="@+id/L"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text=" " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" " />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" " />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="Z"
+                    android:id="@+id/Z"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="X"
+                    android:id="@+id/X"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="C"
+                    android:id="@+id/C"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="V"
+                    android:id="@+id/V"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="B"
+                    android:id="@+id/B"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="N"
+                    android:id="@+id/N"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:onClick="btnOnClickProcess"
+                    android:text="M"
+                    android:id="@+id/M"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" " />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:id="@+id/btnSpeak"
+                    android:drawableLeft="@android:drawable/ic_btn_speak_now"
+                    android:onClick="btnOnClickSpeak"
+                    android:text="Speak" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lines="2"
+            android:paddingStart="118dp"
+            android:paddingEnd="118dp"
+            android:textColor="#000000"
+            android:text=""
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/toOverwrite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/LinearGrid"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/textHint1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="2"
+        android:paddingStart="118dp"
+        android:paddingEnd="118dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/toOverwrite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LinearGrid"
+        app:layout_constraintTop_toBottomOf="@+id/textWord"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <TextView
+        android:id="@+id/textHint2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="2"
+        android:textColor="#000000"
+        android:paddingStart="118dp"
+        android:paddingEnd="118dp"
+        app:layout_constraintBottom_toTopOf="@+id/toOverwrite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LinearGrid"
+        app:layout_constraintTop_toBottomOf="@+id/textHint1"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/textHint3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="8"
+        android:paddingStart="118dp"
+        android:paddingEnd="118dp"
+        app:layout_constraintBottom_toTopOf="@+id/toOverwrite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LinearGrid"
+        app:layout_constraintTop_toBottomOf="@+id/textHint2"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="1"
+        android:paddingStart="118dp"
+        android:paddingEnd="118dp"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/toOverwrite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LinearGrid"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84000003" />
+
+    <TextView
+        android:id="@+id/textContinueScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/buttonContinue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:onClick="btnOnClickNextStage"
+        android:paddingLeft="200dp"
+        android:paddingTop="70dp"
+        android:paddingRight="200dp"
+        android:background="#00000000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48000002"/>
+    <Button
+        android:id="@+id/buttonConfirmName"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:paddingLeft="155dp"
+        android:paddingTop="35dp"
+        android:paddingRight="155dp"
+        android:paddingBottom="35dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Leaderboard"
+        android:textColor="#FF0000"
+        android:textSize="32sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/tryAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="160dp"
+        android:paddingRight="160dp"
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp"
+        android:onClick="btnOnClickTryAgain"
+        android:background="#00000000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stopPlaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="160dp"
+        android:paddingTop="35dp"
+        android:paddingRight="160dp"
+        android:paddingBottom="35dp"
+        android:onClick="btnBackToMainMenu"
+        android:background="#00000000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tryAgain"
+        app:layout_constraintVertical_bias="0.26999998" />
+</androidx.constraintlayout.widget.ConstraintLayout>
